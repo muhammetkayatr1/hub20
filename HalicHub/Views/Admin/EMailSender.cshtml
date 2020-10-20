@@ -1,0 +1,25 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-lg-10 m-auto">
+            <div class="contact-form">
+                <form asp-controller="Admin" asp-action="EmailSender">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="name-input">
+                                <input type="text" name="Subject" required placeholder="Konu">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="email-input">
+                                <input type="text" name="Body" required placeholder="İçerik">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-submit">
+                        <button type="submit">Mesajı Gönder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
